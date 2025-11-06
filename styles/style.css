@@ -1,11 +1,86 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+/* global */
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--accent-color);
+  border-bottom: none;
+  border-left: none;
+}
 
-.page {  
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--accent-color);
+  border-top: none;
+  border-right: none;
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+}
+
+.font-weight__bold {
+  font-weight: bold;
+}
+
+.font-weight__normal {
+  font-weight: normal;
+}
+
+.title {
+  color: var(--font-color-header-h1);
+  font-weight: bold;
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-h1);
+}
+
+.gap__xs {
+  gap: 10px;
+}
+
+.gap__s {
+  gap: 20px;
+}
+
+.gap__l {
+  gap: 50px;
+}
+
+/* main */
+.page {
+  padding: var(--page-padding);
+  font-size: var(--main-font-size);  
   background-color: var(--background-color-header);
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-image: var(--background-image);
   background-position: center;
+  background-size: cover;
   background-attachment: fixed;
+}
+
+.link {
+  text-decoration: none;
+  text-shadow: 2px 1px 0 var(--accent-color);
+
+}
+
+.link:hover {
+  border-bottom: 1px solid currentColor;
+}
+
+.link:focus-visible{
+  outline: 1px solid currentColor;
 }
 
 /* header */
@@ -14,20 +89,22 @@
   position: relative;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  height: 100vh;
   min-height: 375px;
-  margin-bottom: 40px;
+  margin-bottom: var(--margin-bottom-header-main);
+  block-size: 100vh;
+  inline-size: 100%;
 }
 
 .header__theme-menu {
+  grid-row: 1;
   justify-self: right;
   align-self: center;
+  padding-top: 5px;
 }
 
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 .header__theme-menu-button {
@@ -35,7 +112,6 @@
   border: none;
   padding: 5px 13px;
   color: var(--accent-color);
-  font-size: 18px;
   line-height: 18px;
   text-transform: lowercase;
   background: none;
@@ -56,55 +132,109 @@
 }
 
 .header__title {
-  color: var(--font-color-header-h1);
-  font-weight: bold;
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  line-height: 82.5%;
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 .description__text {
   align-self: center;
+  margin-block-start: -12px;
   font-weight: bold;
   background-color: var(--accent-color);
 }
 
+.rec-decor{
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  color: var(--accent-color);
+}
+
+.rec-decor::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -20px;
+  align-items: end;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  background-color: var(--accent-color);
+  
+
+}
+
 /* section */
+
+.margin-bottom__l {
+  margin-bottom: 10px;
+}
+
+.section__header {
+  color: var(--accent-color);
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+}
 
 .sections-styles {
   display: flex;
   flex-direction: column;
-  gap: 50px;
-  margin-bottom: 40px;
+  margin-bottom: var(--margin-bottom-header-main);
 }
 
 .section {
   display: grid;
-  gap: 20px;
-  padding: 0 10px;
 }
 
 .section__list {
   display:  flex;
   flex-direction: column;
-  gap: 20px;
 } 
 
 .list__item {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 .item__title {
-  margin-bottom: 10px;
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
 }
 
 .item__description {
   color: var(--text-color);
+  line-height: var(--font-size-p);
 }
 
-.list__item > .item-title {
-  font-weight: normal;
+.inner-list > .item__title {
+  font-size: var(--font-size-h4);
+  line-height: var(--line-height-h4);
 }
+
+.gallery {
+  display: grid;
+  grid-template-rows: repeat(min-fit);
+}
+
+.gallery__item {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.footer {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  min-height: 375px;
+  block-size: 100vh;
+  inline-size: 100%;
+}
+
+.footer__title {
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+
 

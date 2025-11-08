@@ -15,8 +15,5 @@
   --accent-color: #FF0070;
   --text-color: #F1B2CE;
   --accent-color-opacity: rgba(255 0 112 / 40%);
-}
-
-.header__rec-decor::before{
-  display: block;
+  --main-color: #000028;
 }

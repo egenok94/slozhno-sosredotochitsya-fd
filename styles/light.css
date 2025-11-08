@@ -15,4 +15,24 @@
   --accent-color: #FF8DCB;
   --text-color: #353430;
   --accent-color-opacity: rgba(50 49 45 / 40%);
+  --main-color: #353430;
+}
+
+.theme-light > .page .decorated-zone > .rec-decor{
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root.theme-auto {
+    --background-image: url("../images/cover-image-light.png");
+    --background-color-header: #ffeef6;
+    --font-color-header-h1: #FFC2E6;
+    --accent-color: #FF8DCB;
+    --text-color: #353430;
+    --accent-color-opacity: rgba(50 49 45 / 40%);
+  }
+
+  .theme-auto > .page .decorated-zone > .rec-decor{
+  display: none;
+}
 }

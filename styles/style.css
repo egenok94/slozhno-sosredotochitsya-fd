@@ -200,7 +200,7 @@
 
 .item__description {
   color: var(--text-color);
-  line-height: var(--font-size-p);
+  line-height: var(--line-height-p);
 }
 
 .section__gallery {

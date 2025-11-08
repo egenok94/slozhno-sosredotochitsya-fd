@@ -20,8 +20,8 @@
   --font-size-h4: 18px;
   --line-height-h4: 23.4px;
   --line-height-p: 23.4px;
-  --page-padding: 0 10px;
-  --top-botom-for-decor-element: 10px;
+  --page-padding: 10px;
+  --padding-for-decor-element: 10px;
   --margin-bottom-header-main: 40px;
   --gap-xs: 10px;
   --gap-s: 20px;

@@ -232,7 +232,7 @@
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
-@media (width > 768px) {
+@media (width >= 768px) {
 
   :root {
     --page-padding: 0 20px;
@@ -265,12 +265,10 @@
   }
 
   .section__different > .section__list {
-    grid-column: 1 / 3;
-    grid-row-start: 2;
+    grid-column: span 3;
   }
 
   .section__gallery {
-    grid-column: 1 / 3;
     gap: var(--gap-s);
   }
 
@@ -301,7 +299,7 @@
   }
 }
 
-@media (width > 1024px) {
+@media (width >= 1024px) {
 
   .header__theme-menu {
     justify-self: center;

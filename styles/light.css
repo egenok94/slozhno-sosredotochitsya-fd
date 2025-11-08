@@ -18,7 +18,7 @@
   --main-color: #353430;
 }
 
-.theme-light > .page .decorated-zone > .rec-decor{
+.theme-light > .page .decorated-zone > .rec-decor {
   display: none;
 }
 
@@ -32,7 +32,7 @@
     --accent-color-opacity: rgba(50 49 45 / 40%);
   }
 
-  .theme-auto > .page .decorated-zone > .rec-decor{
+  .theme-auto > .page .decorated-zone > .rec-decor {
   display: none;
 }
 }

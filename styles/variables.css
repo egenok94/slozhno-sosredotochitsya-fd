@@ -5,8 +5,9 @@
 :root {
   --background-image: url("../images/cover-image-dark.png");
   --background-color-header: #00082b;
-  --font-color-header-h1: #DB00FF;
+  --font-color-header-footer: #DB00FF;
   --accent-color: #FF0070;
+  --color-for-button-subtitles-decor: #FF0070;
   --text-color: #F1B2CE;
   --accent-color-opacity: rgba(255 0 112 / 40%);
   --main-font-size: 18px;

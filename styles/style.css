@@ -106,6 +106,7 @@
   line-height: 18px;
   text-transform: lowercase;
   background: none;
+  transition: all 0.6s;
 }
 
 .header__theme-menu-button_active {

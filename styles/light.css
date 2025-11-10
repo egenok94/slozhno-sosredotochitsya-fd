@@ -30,7 +30,8 @@
   :root {
     --background-image: url("../images/cover-image-light.png");
     --background-color-header: #ffeef6;
-    --font-color-header-h1: #FFC2E6;
+    --font-color-header-footer: #FFC2E6;
+    --color-for-button-subtitles-decor: #353430;
     --accent-color: #FF8DCB;
     --text-color: #353430;
     --accent-color-opacity: rgba(50 49 45 / 0.4);
